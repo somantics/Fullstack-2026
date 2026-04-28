@@ -3,6 +3,11 @@ namespace Fullstack_2026.registry;
 
 internal class CLIClient
 {
+    /*
+    Command line interface responsible for talking to data structure and printing things pretty.
+
+    Just a simple while loop w. a switch statement to determine which command is being inputted. 
+    */
     private const string CommandPrompt = "Enter command: ";
     private Registry registry;
     private bool running = true;
@@ -79,7 +84,7 @@ internal class CLIClient
     {
         Console.WriteLine();
         Console.WriteLine("Programmet har följande kommandon:");
-        Console.WriteLine("Add/a, följt av förnamn efternamn lön");
+        Console.WriteLine("Add/a, följt av förnamn efternamn (lön)");
         Console.WriteLine("Remove/rm, följt av förnamn efternamn lön");
         Console.WriteLine("Print/p för att skriva ut listan");
         Console.WriteLine("Drop/d för att tömma listan");
