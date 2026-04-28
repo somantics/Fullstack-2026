@@ -4,6 +4,11 @@ namespace Fullstack_2026.registry;
 
 internal class Registry
 {
+    /* Internal representation of the personell registry. 
+
+    Uses a list internally now, but should work the same for the user if we swap to a database. 
+    Note that we are using immutable data: it is this class' responsibility to hide this from the user.
+    */
     private List<Employee> registry = [];
 
     public void AddEmployee(Employee employee)
@@ -52,7 +57,7 @@ internal class Registry
         registry.Clear();
     }
 
-    public string GetEmployees()
+    public string GetEmployeeDescriptions()
     {
         var builder = new StringBuilder();
         foreach (var employee in registry)

@@ -23,6 +23,7 @@ Registry:
 * void ClearEmployees()
 * void UpdateName(Employee employee)
 * void UpdateSalary(Employee employee)
+* string GetEmployeeDescriptions()
 
 Employee: IDisplayable
 * namn av typ Name
@@ -40,4 +41,11 @@ Salary: IDisplayable
 * GetYearlyAmount() returnerar int med årslön
 
 CLIClient:
-* 
+* registry Registry
+* void Run() 
+* void WelcomeUser()
+* void PrintHelp()
+* void Print Employees()
+* void Quit()
+* void AddEmployee()
+* void RemoveEmployee()
